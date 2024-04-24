@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моделирование амплитудной модуляции сигнала  </title>
+  
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-blue-200">
+  <header class="text-center">
+    <h1 class=" my-10 font-serif text-2xl ">Моделирование амплитудной модуляции сигнала</h1>
+  </header>
+
+  <div class="split left">
+    <div class="centered">
+
+      <div>
+        <label>Частота несущего колебания(1/с)</label> 
+        <input class="input  text-center text" type="text" id="frecNes_id" value="5">
+    </div>
+    <div>
+      <label>Амплитуда несущего колебания</label> 
+      <input class="input  text-center text" type="text" id="ANes_id" value="15">
+  </div>
+  <div>
+    <label>Частота информационного сигнала(1/с)</label> 
+    <input class="input  text-center text" type="text" id="frecInf_id" value="0.4">
+</div>
+<div>
+  <label>Амплитуда информационного сигнала</label> 
+  <input class="input  text-center text" type="text" id="AInf_id" value="10">
+</div>
+
+
+     
+      <div class="my-10 text-center">
+        <input  id="del" class="hidden btn text-center" type="button" value="Костыль" />
+      </div>
+      <div class="text-center">
+        <input  id="result" class="btn" type="button" value="Результат" />
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="split right">
+    <div style="width: 80%;">
+    <div id="tester" ></div>
+     <div id="tester2" ></div>
+     <div id="tester3" ></div>
+     <div id="tester4" ></div>
+     <div id="tester5" ></div>
+     <div id="tester6" ></div>
+    </div>
+  </div>
+  <footer class="footer text-lg">
+    <p class="font-serif text-lg ">*Графики пролистываются </p>
+    <a href="https://t.me/Indo_evri_momint" target="_blank"> Ссылка на telegram</a>
+</footer>
+    
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
