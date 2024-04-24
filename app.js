@@ -37,7 +37,7 @@ function showMessage(frecNes,ANes,frecInf,AInf) {
     let koef=AInf/ANes;
 
     let T = 2*Math.PI/Math.min(wNes,wInf);
-    //console.log("b: ", b, " w0: ",w0, "w: ", w , "w^2: ", w_2);
+    //направляющие косинусы cosx= 1/2 cosy=-корень(3)/2 ;
     for (let i =0; (i<2*T); i +=0.001){
         let Inf = AInf*Math.cos(wInf*i);
         let Nes = ANes*Math.cos(wNes*i);
